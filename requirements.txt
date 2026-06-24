@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+easyocr
+langdetect
+deep-translator
+sqlalchemy
+jinja2
+pillow
+unidecode
+numpy

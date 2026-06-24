@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatLingo</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>ChatLingo</h1>
+                <p>Realtime chat translation from screen capture.</p>
+            </div>
+
+            <div class="controls">
+                <button id="shareButton" class="button primary">Share Chat Window</button>
+                <label for="targetLanguage">Target Language</label>
+                <select id="targetLanguage">
+                    <option value="te">Telugu</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ta">Tamil</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="zh-cn">Chinese</option>
+                    <option value="ar">Arabic</option>
+                    <option value="ru">Russian</option>
+                    <option value="en" selected>English</option>
+                </select>
+                <button id="startButton" class="button">Start Translation</button>
+                <button id="stopButton" class="button secondary" disabled>Stop Translation</button>
+                <div class="status-panel">
+                    <strong>Status</strong>
+                    <p id="statusText">Idle</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <header class="header">
+                <div>
+                    <h2>Live Translation Feed</h2>
+                    <p>Translated chat messages will appear here in real time.</p>
+                </div>
+            </header>
+
+            <section id="feed" class="feed"></section>
+        </main>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
